@@ -52,7 +52,16 @@ div#header p.tagline {
 
 div#header a {
 	color: white;
-	}	
+	}
+
+div#supporting {
+	background-color: #3D3D3D;
+	color: #CDC1C5;
+	}
+
+div#supporting a {
+	color: white;
+	}
 
 /* Accessibility */
 ul.accessibility {
@@ -101,10 +110,6 @@ div#content {
 div#main {
 }
 
-div#supporting {
-	clear: both;
-}
-
 div#content ul.imagegallery li {
 	float: left;
 	padding: 0px 5px 0px 20px;
@@ -112,6 +117,29 @@ div#content ul.imagegallery li {
 	text-align: center;
 	font-size: 80%;
 	font-style: italic;
+}
+
+div#supporting {
+	clear: both;
+	padding: 10px 0px 15px 15px;
+}
+
+div#supporting li {
+	font-weight: bold;
+	list-style-type: none;
+	margin: 5px 0px 0px 0px;
+}
+
+div#supporting * li ul li {
+	list-style-image: none;
+	list-style-type: circle;
+	font-weight: normal;
+	font-size: 95%;
+	margin: 0px 0px 0px 25px;
+}
+
+div#supporting * li ul a {
+	font-weight: normal;
 }
 
 
@@ -177,32 +205,32 @@ div#content p {
 	margin: 5px 50px 30px 35px;
 }
 
-/*Content Typography: Unordered Lists*/
-div#content ul {
+/*Main Content Typography: Unordered Lists*/
+div#main ul {
 	margin: 5px 0px 30px 50px;
 }
-div#content ul li {
+div#main ul li {
 	list-style-image: none;
 	list-style-type: disc;
 }
 /*Nested*/
-div#content * li ul {
+div#main * li ul {
 	margin: 0px 0px 0px 25px;
 }
-div#content * li ul li {
+div#main * li ul li {
 	list-style-image: none;
 	list-style-type: circle;
 }
 
 /*Content Typography: Ordered Lists*/
-div#content ol {
+div#main ol {
 }
-div#content ol li {
+div#main ol li {
 }
 /*Nested*/
-div#content * li ol {
+div#main * li ol {
 }
-div#content * li ol li {
+div#main * li ol li {
 }
 
 /*Content Typography: Links*/
