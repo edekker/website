@@ -9,9 +9,57 @@ i,em,cite { font-style: italic; }
 /* Dotted border and help cursor to abbr and acronym: */
 abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
+/* COLORS
+	Color names from http://cloford.com/resources/colours/500col.htm 
+	lavenderblush 3 #CDC1C5
+	lavenderblush 4 #8B8386
+	gray 24 #3D3D3D
+	plum 4 #8B668B
+*/
+
+body {
+	background-color: white;
+	color: #3D3D3D;
+	}
+
+h1 {
+	color: white;
+	}
+
+h2,h3,h5,h6 {
+	color: #8B8386;
+	}
+
+h4 {
+	color: #8B668B;
+	}
+
+a {
+	color: #8B668B;
+	}
+
+#nav a {
+	color: #CDC1C5;
+	}
+	
+#header {
+	background-color: #8B8386;
+	}
+	
+div#header li {
+	color: white;
+	}
+
+div#header a {
+	color: white;
+	}	
+
+
 /* Body */
 
 body {
+	margin: 30px 0px 0px 50px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 /* Major Divisions */
@@ -84,17 +132,24 @@ div#content h6 {
 
 /*Content Typography: Paragraphs*/
 div#content p {
+	margin: 5px 50px 30px 20px;
 }
 
 /*Content Typography: Unordered Lists*/
 div#content ul {
+	margin: 5px 0px 30px 50px;
 }
 div#content ul li {
+	list-style-image: none;
+	list-style-type: disc;
 }
 /*Nested*/
 div#content * li ul {
+	margin: 0px 0px 0px 50px;
 }
 div#content * li ul li {
+	list-style-image: none;
+	list-style-type: circle;
 }
 
 /*Content Typography: Ordered Lists*/
