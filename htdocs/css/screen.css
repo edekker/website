@@ -46,7 +46,7 @@ a {
 	background-color: #8B8386;
 	}
 	
-div#header li {
+div#header p.tagline {
 	color: white;
 	}
 
@@ -54,12 +54,21 @@ div#header a {
 	color: white;
 	}	
 
+/* Accessibility */
+ul.accessibility {
+	position: absolute;
+	left: -10000px;
+}
 
 /* Body */
 
 body {
 	margin: 30px 0px 0px 50px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+img {
+	display: block;
 }
 
 /* Major Divisions */
@@ -80,6 +89,7 @@ div#header h1 {
 div#header h1 a {
 }
 div#header p.tagline {
+	font-style: italic;
 }
 div#header ul.accessibility {
 }
@@ -140,7 +150,6 @@ div#content h2,h3,h4,h5,h6 {
 
 div#content h2 {
 	font-size: 150%;
-	font-style: italic;
 	margin: 10px 0px 10px 0px;
 }
 div#content h3 {
@@ -207,6 +216,3 @@ div#content a:focus {
 	text-decoration: underline;
 }
 
-img {
-	display: block;
-}
