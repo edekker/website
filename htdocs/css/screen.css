@@ -70,8 +70,12 @@ div#page {
 
 /* Header */
 div#header {
+	padding: 15px;
+	margin: 0px 0px 0px -20px;
 }
 div#header h1 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 200%;
 }
 div#header h1 a {
 }
@@ -88,7 +92,18 @@ div#main {
 }
 
 div#supporting {
+	clear: both;
 }
+
+div#content ul.imagegallery li {
+	float: left;
+	padding: 0px 5px 0px 20px;
+	list-style-type: none;
+	text-align: center;
+	font-size: 80%;
+	font-style: italic;
+}
+
 
 /* Footer */
 div#footer {
@@ -119,15 +134,32 @@ ul#navigation li a:focus {
 
 
 /*Content Typography: Headings*/
+div#content h2,h3,h4,h5,h6 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
 div#content h2 {
+	font-size: 150%;
+	font-style: italic;
+	margin: 10px 0px 10px 0px;
 }
 div#content h3 {
+	font-size: 170%;
+	border-bottom: 1px dotted #8B8386;
+	padding: 5px; 
 }
 div#content h4 {
+	font-size: 130%;
+	margin: 10px 0px 0px 0px;
 }
 div#content h5 {
+	font-size: 100%;
+	margin: 5px 0px 0px 20px;
 }
 div#content h6 {
+	font-size: 95%;
+	font-style: italic;
+	margin: 2px 0px 0px 20px;
 }
 
 /*Content Typography: Paragraphs*/
@@ -164,11 +196,17 @@ div#content * li ol li {
 }
 
 /*Content Typography: Links*/
-div#content a {
+div#content a,a:link {
+	text-decoration: none;
+	font-weight: bold;
 }
 div#content a:visited {
 }
 div#content a:hover,
 div#content a:focus {
+	text-decoration: underline;
 }
 
+img {
+	display: block;
+}
