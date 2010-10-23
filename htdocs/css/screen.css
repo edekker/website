@@ -123,14 +123,17 @@ div#main {
 	margin-right: 25px;
 }
 
+div#content ul.imagegallery {
+	margin: 0px 0px 25px 50px;
+	}
+
 div#content ul.imagegallery li {
 	float: left;
-	padding: 0px 5px 0px 20px;
+	padding: 0px 25px 25px 0px;
 	list-style-type: none;
 	text-align: center;
 	font-size: 80%;
 	font-style: italic;
-	margin-bottom: 25px;
 }
 
 div#supporting {
