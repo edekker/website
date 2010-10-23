@@ -172,7 +172,7 @@ div#footer a {
 }
 
 div#footer img {
-	display: inline;
+	float: right;
 }
 
 /*Navigation*/
