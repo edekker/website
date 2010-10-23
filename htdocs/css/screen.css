@@ -13,7 +13,8 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 	Color names from http://cloford.com/resources/colours/500col.htm 
 	lavenderblush 3 #CDC1C5 (lighter)
 	lavenderblush 4 #8B8386 (darker)
-	gray 24 #3D3D3D
+	gray 24 #3D3D3D (dark)
+	gray 87 #DEDEDE (light)
 	plum 4 #8B668B
 */
 
