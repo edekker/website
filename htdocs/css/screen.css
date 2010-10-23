@@ -222,36 +222,40 @@ div#content h2,h3,h4,h5,h6 {
 
 div#content h2 {
 	font-size: 170%;
-	margin: 10px 0px 10px 0px;
+	margin: 0px 0px 12.5px 25px;
 }
 div#content h3 {
 	font-size: 150%;
 	border-bottom: 1px dotted #8B8386;
-	margin: 0px 0px 0px 10px;	
-	padding: 5px; 
+	padding-bottom: 5px;
+	margin: 0px 0px 12.5px 50px; 
 }
 div#content h4 {
 	font-size: 130%;
-	margin: 10px 0px 0px 20px;
+	margin: 0px 0px 5px 75px;
 }
 div#content h5 {
 	font-size: 100%;
-	margin: 5px 0px 0px 35px;
+	margin: 0px 0px 2.5px 100px;
 }
 div#content h6 {
 	font-size: 95%;
 	font-style: italic;
-	margin: 2px 0px 0px 35px;
+	margin: 0px 0px 5px 100px;
 }
 
 /*Content Typography: Paragraphs*/
 div#content p {
-	margin: 5px 50px 30px 35px;
+	margin: 0px 0px 25px 50px;
+}
+
+div#content p.resume {
+	margin: 0px 0px 25px 125px;
 }
 
 /*Main Content Typography: Unordered Lists*/
 div#main ul {
-	margin: 5px 0px 30px 50px;
+	margin: 0px 0px 25px 125px;
 }
 div#main ul li {
 	list-style-image: none;
