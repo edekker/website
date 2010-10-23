@@ -54,7 +54,7 @@ div#header a,p.tagline {
 	}
 
 div#supporting {
-	background-color: #3D3D3D;
+	background-color: #8b8386;
 	color: #CDC1C5;
 	}
 
@@ -109,6 +109,12 @@ div#content {
 }
 
 div#main {
+	margin-top: 50px;
+	min-height: 165px;
+}
+
+div#main .supportingpresent {
+	width: 720px;
 }
 
 div#content ul.imagegallery li {
@@ -121,7 +127,11 @@ div#content ul.imagegallery li {
 }
 
 div#supporting {
-	clear: both;
+	width: 225px;
+	min-height: 155px;
+	position: absolute;
+	top: 175px;
+	right: 0px;
 	padding: 10px 0px 15px 15px;
 }
 
@@ -158,6 +168,7 @@ div#footer ul.validators li {
 ul#navigation {
 	position: absolute;
 	top: 125px;
+	height: 25px;
 }
 
 ul#navigation li {
@@ -167,6 +178,7 @@ ul#navigation li {
 
 ul#navigation li a {
 	display: block;
+	height: 25px;
 	text-decoration: none;
 	text-align: center;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
