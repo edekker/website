@@ -110,7 +110,7 @@ div#content {
 
 div#main {
 	margin-top: 50px;
-	min-height: 165px;
+	min-height: 180px;
 }
 
 .supportingpresent {
@@ -156,6 +156,7 @@ div#supporting * li ul a {
 
 /* Footer */
 div#footer {
+	clear: both;
 }
 div#footer p.credits {
 }
