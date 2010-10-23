@@ -161,23 +161,25 @@ div#supporting * li ul a {
 /* Footer */
 div#footer {
 	clear: both;
+	min-height: 15px;
+	padding: 5px;
 }
 
 div#footer p {
 	font-size: 50%;
 }
 
+div#footer p.credits {
+	float: left;
+}
+
 div#footer p.validators {
-	text-align: right;
+	float: right;
 }
 
 div#footer a {
 	font-weight: normal;
 	text-decoration: underline;
-}
-
-div#footer img {
-	float: left;
 }
 
 /*Navigation*/
