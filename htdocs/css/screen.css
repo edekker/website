@@ -129,6 +129,7 @@ div#content ul.imagegallery li {
 	text-align: center;
 	font-size: 80%;
 	font-style: italic;
+	margin-bottom: 25px;
 }
 
 div#supporting {
@@ -164,6 +165,7 @@ div#footer {
 	clear: both;
 	min-height: 15px;
 	padding: 5px;
+	margin-top: 25px;
 }
 
 div#footer p {
