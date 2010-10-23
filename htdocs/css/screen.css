@@ -167,12 +167,17 @@ div#footer p {
 	font-size: 50%;
 }
 
+div#footer p.validators {
+	text-align: right;
+}
+
 div#footer a {
 	font-weight: normal;
+	text-decoration: underline;
 }
 
 div#footer img {
-	float: right;
+	float: left;
 }
 
 /*Navigation*/
