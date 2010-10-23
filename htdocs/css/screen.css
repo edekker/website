@@ -45,7 +45,7 @@ background-color: #CDC1C5;
 	color: #3D3D3D;
 	}
 	
-#header {
+#header,#footer {
 	background-color: #8B8386;
 	}
 	
@@ -53,6 +53,10 @@ div#header a,p.tagline {
 	color: white;
 	}
 
+div#footer a, div#footer p {
+	color: #DEDEDE;
+	}
+	
 div#supporting {
 	background-color: #8b8386;
 	color: #CDC1C5;
@@ -72,10 +76,6 @@ ul.accessibility {
 
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-img {
-	display: block;
 }
 
 /* Major Divisions */
@@ -106,6 +106,10 @@ div#header ul.accessibility {
 
 /* Content */
 div#content {
+}
+
+div#content img {
+	display: block;
 }
 
 div#main {
@@ -158,11 +162,17 @@ div#supporting * li ul a {
 div#footer {
 	clear: both;
 }
-div#footer p.credits {
+
+div#footer p {
+	font-size: 50%;
 }
-div#footer ul.validators {
+
+div#footer a {
+	font-weight: normal;
 }
-div#footer ul.validators li {
+
+div#footer img {
+	display: inline;
 }
 
 /*Navigation*/
