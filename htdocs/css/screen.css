@@ -11,13 +11,13 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 /* COLORS
 	Color names from http://cloford.com/resources/colours/500col.htm 
-	lavenderblush 3 #CDC1C5
-	lavenderblush 4 #8B8386
+	lavenderblush 3 #CDC1C5 (lighter)
+	lavenderblush 4 #8B8386 (darker)
 	gray 24 #3D3D3D
 	plum 4 #8B668B
 */
 
-body {
+#content {
 	color: #3D3D3D;
 	}
 
@@ -37,19 +37,19 @@ a {
 	color: #8B668B;
 	}
 
-#nav a {
-	color: #CDC1C5;
+ul#navigation {
+background-color: #CDC1C5;
+}	
+	
+#navigation a {
+	color: #3D3D3D;
 	}
 	
 #header {
 	background-color: #8B8386;
 	}
 	
-div#header p.tagline {
-	color: white;
-	}
-
-div#header a {
+div#header a,p.tagline {
 	color: white;
 	}
 
@@ -71,7 +71,6 @@ ul.accessibility {
 /* Body */
 
 body {
-	margin: 30px 0px 0px 50px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -157,12 +156,21 @@ div#footer ul.validators li {
 
 /*Navigation*/
 ul#navigation {
+	position: absolute;
+	top: 125px;
 }
 
 ul#navigation li {
+	width: 192px;
+	float: left;
 }
 
 ul#navigation li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
 }
 
 ul#navigation li a:visited {
@@ -170,6 +178,7 @@ ul#navigation li a:visited {
 
 ul#navigation li a:hover,
 ul#navigation li a:focus {
+	background-color: white;
 }
 
 
