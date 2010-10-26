@@ -10,7 +10,7 @@ i,em,cite { font-style: italic; }
 abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 /* COLORS
-	Color names from http://cloford.com/resources/colours/500col.htm 
+	Color names from http://cloford.com/resources/colours/500col.htm
 	lavenderblush 3 #CDC1C5 (lighter)
 	lavenderblush 4 #8B8386 (darker)
 	gray 24 #3D3D3D (dark)
@@ -40,16 +40,16 @@ a {
 
 ul#navigation {
 background-color: #CDC1C5;
-}	
-	
+}
+
 #navigation a {
 	color: #3D3D3D;
 	}
-	
+
 #header,#footer {
 	background-color: #8B8386;
 	}
-	
+
 div#header a,p.tagline {
 	color: white;
 	}
@@ -57,7 +57,7 @@ div#header a,p.tagline {
 div#footer a, div#footer p {
 	color: #DEDEDE;
 	}
-	
+
 div#supporting {
 	background-color: #8b8386;
 	color: #CDC1C5;
@@ -218,6 +218,14 @@ ul#navigation li a:focus {
 	background-color: white;
 }
 
+/* Allows current page tab to be highlighted, code help from http://www.hicksdesign.co.uk/else/cssnav/index.html */
+body#home a#homenav,
+body#about a#aboutnav,
+body#resume a#resumenav,
+body#portfolio a#portfolionav,
+body#contact a#contactnav {
+    background-color: white;
+}
 
 /*Content Typography: Headings*/
 div#content h2,h3,h4,h5,h6 {
@@ -232,7 +240,7 @@ div#content h3 {
 	font-size: 150%;
 	border-bottom: 1px dotted #8B8386;
 	padding-bottom: 5px;
-	margin: 0px 0px 12.5px 50px; 
+	margin: 0px 0px 12.5px 50px;
 }
 div#content h4 {
 	font-size: 130%;
