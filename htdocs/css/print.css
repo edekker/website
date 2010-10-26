@@ -31,9 +31,9 @@ ul.validators {
 /*
   Automatically print the URLs from hyperlinks in the
   content area of a page, and put them in a monospace font,
-  in parentheses. 
+  in parentheses.
   This may not work on less standards-compliant browsers,
-  which do not support the :after pseudoelement and/or 
+  which do not support the :after pseudoelement and/or
   the content: property.
   See http://www.alistapart.com/articles/goingtoprint/
 */
@@ -44,4 +44,147 @@ div#content a:visited:after {
    font-size: 90%;
    font-family: "Courier New", Courier, monospace;
 }
+
+/* BODY STYLES */
+
+body {
+	font-family: sans-serif;
+	font-size: 11pt;
+	}
+
+p {
+	margin-top: 5px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	}
+
+ul {
+	margin-top: 5px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	}
+
+ul li {
+	list-style-image: none;
+	list-style-type: disc;
+	}
+
+ul.nested-list {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 50px;
+	}
+
+ul.nested-list li {
+	list-style-image: none;
+	list-style-type: circle;
+	}
+
+/* HEADING STYLES */
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: serif;
+	}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 20pt;
+	margin: 0;
+	}
+
+h2 {
+	font-weight: bold;
+	font-size: 20pt;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+
+h3 {
+	font-weight: bold;
+	font-size: 16pt;
+	border-bottom: 1px dotted #8B8386;
+	padding: 5px;
+	}
+
+h4 {
+	font-weight: bold;
+	font-size: 13pt;
+	margin-top: 10px;
+	margin-bottom: 0;
+	}
+
+h5 {
+	font-weight: bold;
+	font-size: 11pt;
+	margin-top: 5px;
+	margin-bottom: 0;
+	margin-left: 20px;
+	}
+
+h6 {
+	font-weight: bold;
+	font-size: 11pt;
+	font-style: italic;
+	margin-top: 2px;
+	margin-bottom: 0;
+	margin-left: 20px;
+	}
+
+/* LINK STYLES */
+a,a:link {
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+a:after {
+	content: " ("attr(href)") ";
+	}
+
+/* DIV AND CLASS STYLES */
+
+div#header  ul {
+	text-align: center;
+	font-size: 9pt;
+	margin: 0;
+	padding: 0;
+	position: static;
+	}
+
+div#header li {
+	list-style-type: none;
+	}
+
+div#header a {
+	font-weight: normal;
+	text-decoration: none;
+	}
+
+div#header a:after {
+	content: none;
+	}
+
+#nav a {
+	display: none;
+	}
+
+.navdiv {
+	display: none;
+	}
+
+div.imagegallery {
+	float: none;
+	}
+
+div.imagegallery p {
+	font-size: 9pt;
+	text-align: left;
+	font-style: italic;
+	margin: 0 0 30px 0;
+	}
+
+div.imagegallery a {
+	font-size: 9pt;
+	font-style: normal;
+	}
 
