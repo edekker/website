@@ -90,8 +90,9 @@ div#page {
 
 /* Header */
 div#header {
-	height: 75px;
-	padding: 25px;
+	background-image: url('gfx/header.png');
+	height: 150px;
+	text-indent: -10000px;
 }
 div#header h1 {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -140,7 +141,7 @@ div#supporting {
 	width: 225px;
 	min-height: 155px;
 	position: absolute;
-	top: 175px;
+	top: 200px;
 	right: 0px;
 	padding: 10px 0px 15px 15px;
 }
@@ -192,7 +193,7 @@ div#footer a {
 /*Navigation*/
 ul#navigation {
 	position: absolute;
-	top: 125px;
+	top: 150px;
 	height: 25px;
 }
 
