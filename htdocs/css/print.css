@@ -17,16 +17,16 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 /*
   Hide the accessibility navigation, the site navigation,
-  and the validator links, which are unhelpful when a page
+  and footer, which are unhelpful when a page
   is printed.
 */
 
 ul.accessibility,
 ul#navigation,
-ul.validators {
+div#footer, 
+div#supporting {
 	display: none;
 }
-
 
 /*
   Automatically print the URLs from hyperlinks in the
@@ -43,148 +43,113 @@ div#content a:visited:after {
    content: " (" attr(href) ") ";
    font-size: 90%;
    font-family: "Courier New", Courier, monospace;
+   font-style: normal;
 }
 
-/* BODY STYLES */
+/* Body */
 
 body {
 	font-family: sans-serif;
 	font-size: 11pt;
 	}
 
-p {
-	margin-top: 5px;
-	margin-bottom: 30px;
-	margin-left: 20px;
-	}
+/* Major Divisions */
 
-ul {
-	margin-top: 5px;
-	margin-bottom: 30px;
-	margin-left: 50px;
-	}
+/* Page (Containing Div) */
 
-ul li {
-	list-style-image: none;
-	list-style-type: disc;
-	}
+/* Header */
 
-ul.nested-list {
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: 50px;
-	}
-
-ul.nested-list li {
-	list-style-image: none;
-	list-style-type: circle;
-	}
-
-/* HEADING STYLES */
-
-h1,h2,h3,h4,h5,h6 {
+div#header {
 	font-family: serif;
-	}
-
-h1 {
-	font-weight: bold;
 	text-align: center;
+	}
+	
+div#header h1 {
 	font-size: 20pt;
-	margin: 0;
-	}
-
-h2 {
-	font-weight: bold;
-	font-size: 20pt;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	}
-
-h3 {
-	font-weight: bold;
-	font-size: 16pt;
-	border-bottom: 1px dotted #8B8386;
-	padding: 5px;
-	}
-
-h4 {
-	font-weight: bold;
-	font-size: 13pt;
-	margin-top: 10px;
-	margin-bottom: 0;
-	}
-
-h5 {
-	font-weight: bold;
-	font-size: 11pt;
-	margin-top: 5px;
-	margin-bottom: 0;
-	margin-left: 20px;
-	}
-
-h6 {
-	font-weight: bold;
-	font-size: 11pt;
-	font-style: italic;
-	margin-top: 2px;
-	margin-bottom: 0;
-	margin-left: 20px;
-	}
-
-/* LINK STYLES */
-a,a:link {
-	text-decoration: none;
-	font-weight: bold;
-	}
-
-a:after {
-	content: " ("attr(href)") ";
-	}
-
-/* DIV AND CLASS STYLES */
-
-div#header  ul {
-	text-align: center;
-	font-size: 9pt;
-	margin: 0;
-	padding: 0;
-	position: static;
-	}
-
-div#header li {
-	list-style-type: none;
+	}	
+	
+div#header p.tagline {
+	font-size: 12pt;
 	}
 
 div#header a {
-	font-weight: normal;
 	text-decoration: none;
 	}
 
 div#header a:after {
 	content: none;
 	}
-
-#nav a {
-	display: none;
+	
+/* Content */
+div#content img {
+	display: block;
+}
+	
+div#content ul.imagegallery {
+	margin: 0px 0px 25px 0px;
 	}
 
-.navdiv {
-	display: none;
-	}
-
-div.imagegallery {
+div#content ul.imagegallery li {
 	float: none;
-	}
-
-div.imagegallery p {
-	font-size: 9pt;
+	padding: 0px 15px 25px 0px;
+	list-style-type: none;
 	text-align: left;
-	font-style: italic;
-	margin: 0 0 30px 0;
-	}
-
-div.imagegallery a {
 	font-size: 9pt;
-	font-style: normal;
+	font-style: italic;
 	}
 
+/* Content Typography: Headings */
+div#content h2,h3,h4,h5,h6 {
+	font-family: serif;
+	}
+
+div#content h2 {
+	font-size: 20pt;
+	margin: 25px 0px 12.5px 0px;
+}
+div#content h3 {
+	font-size: 16pt;
+	border-bottom: 1px dotted #8B8386;
+	padding-bottom: 5px;
+	margin: 0px 0px 12.5px 25px;
+}
+div#content h4 {
+	font-size: 13pt;
+	margin: 0px 0px 5px 50px;
+}
+div#content h5 {
+	font-size: 11pt;
+	margin: 0px 0px 2.5px 75px;
+}
+div#content h6 {
+	font-size: 11pt;
+	font-style: italic;
+	margin: 0px 0px 5px 75px;
+}
+
+/* Content Typography: Paragraphs */
+div#content p {
+	margin: 0px 0px 25px 0px;
+}
+
+div#content p.resume {
+	margin: 0px 0px 25px 100px;
+}
+
+/*Main Content Typography: Unordered Lists*/
+div#main ul {
+	margin: 0px 0px 25px 100px;
+}
+div#main ul li {
+	list-style-image: none;
+	list-style-type: disc;
+}
+
+/*Nested*/
+div#main * li ul {
+	margin: 0px 0px 0px 25px;
+}
+div#main * li ul li {
+	list-style-image: none;
+	list-style-type: circle;
+}
