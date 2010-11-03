@@ -135,6 +135,10 @@ div#content ul.imagegallery li {
 	font-style: italic;
 }
 
+div#content .imagegallery + * {
+	clear: both;
+}
+
 div#supporting {
 	width: 225px;
 	min-height: 155px;
