@@ -98,7 +98,12 @@ div#header h1 {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 200%;
 }
-div#header h1 a {
+div#header a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 960px;
+	height: 150px;
 }
 div#header p.tagline {
 	font-style: italic;
