@@ -1,6 +1,9 @@
+##AddType application/x-httpd-php5 .php .htm .html
+##AddHandler x-httpd-php5 .php .htm .html
+AddHandler php-script .htm
+
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
-AddHandler application/x-httpd-php .php .htm .html
-
+AddHandler php5-script .php
