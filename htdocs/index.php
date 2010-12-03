@@ -1,4 +1,5 @@
 <?php $page_title = "Home: EricaDekker.com"; ?>
+<?php $page_type = "home"; ?>
 <?php include("includes/header.htm");?>
 
 	<div id="content">
