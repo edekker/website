@@ -68,6 +68,10 @@ div#supporting a {
 	color: white;
 	}
 
+div#supporting h6 {
+	color: #CDC1C5;
+	}	
+	
 div#supporting p.tweet {
 	color: white;
 	}
@@ -188,7 +192,11 @@ div#supporting * li ul a {
 
 div#supporting p.tweet {
 	margin: 0 0 0 0;
-	}	
+	}
+
+div#supporting p.tweet-info {
+	text-align: right;
+	}
 
 /* FOOTER */
 
@@ -283,6 +291,9 @@ div#content h6 {
 	margin: 0px 0px 5px 100px;
 	}
 
+div#supporting h6 {
+	margin: 0px 0px 5px 0px;
+	}
 	
 /*CONTENT TYPOGRAPHY: PARAGRAPHS*/
 
@@ -293,7 +304,15 @@ div#content p {
 div#content p.resume {
 	margin: 0px 0px 25px 125px;
 	}
-
+	
+div#supporting p.tweet {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 120%;
+	}
+	
+div#supporting p.tweet-info {
+	font-size: 90%;
+	}
 	
 /*MAIN CONTENT TYPOGRAPHY: UNORDERED LISTS*/
 

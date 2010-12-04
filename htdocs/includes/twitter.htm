@@ -1,3 +1,5 @@
+<!--PHP starts here-->
+
 <?php require('simplepie.inc'); ?>
 
         <?php
@@ -56,7 +58,7 @@
 			$tweet = preg_replace($twsearch, $twreplace, $tweet);
 				/*Print it out*/
 				print "<p class=\"tweet\">".fancytext($tweet)."</p>
-				<p class=\"tweet-info\">— ".$tweetdate." at ".$tweettime."</a></p>";
+				<p class=\"tweet-info\">".$tweetdate." at ".$tweettime."</a></p>";
 				}
 			}
 
@@ -68,3 +70,5 @@
 					return $fancysafe;
 				}
 		?>
+
+<!--PHP ends here-->
