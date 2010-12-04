@@ -68,6 +68,9 @@ div#supporting a {
 	color: white;
 	}
 
+div#supporting p.tweet {
+	color: white;
+	}
 	
 /* ACCESSIBILITY */
 
@@ -183,6 +186,9 @@ div#supporting * li ul a {
 	font-weight: normal;
 	}
 
+div#supporting p.tweet {
+	margin: 0 0 0 0;
+	}	
 
 /* FOOTER */
 
