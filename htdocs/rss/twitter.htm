@@ -1,0 +1,80 @@
+<?php require('simplepie.inc'); ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="urf-8">
+        <title>Reading My Twitter Feed</title>
+    </head>
+    <body>
+        <?php
+		edtwitter();
+		function edtwitter() {
+            $edtwitfeed = new SimplePie;
+			$edtwitfeed->enable_cache(false); //Wouldn't use this on an actual site; on live site, need place on server to store cached feeds
+            $edtwitfeed->set_feed_url('http://twitter.com/statuses/user_timeline/120208073.rss');
+			$edtwitfeed->handle_content_type();
+            $edtwitfeed->init();
+			
+			if($edtwitfeed->error()) {
+				/*If there's an error message, spit it out and stop*/
+				print "<p class=\"tweet\">".$edtwitfeed->error()."</p>
+				<p class=\"tweet-info\">
+				<strong>Oops.</strong>
+				There's a Twitter error.</p>";
+				}
+
+			else { 
+				/*Otherwise, attempt to get the tweet, etc.*/  
+				/*Get some stuff, but not @replies */
+					//for($i=0; $i < 5; $i++) {
+					$i = 0;
+					$edgotone = 'no';
+			while($edgotone=='no') {
+				if($item=$edtwitfeed->get_item($i)) {
+					$tweet = substr($item->get_title(), 9); /* Twitter name + 2 characters */
+					$tweet = substr(addslashes(html_entity_decode($item->get_title())), 9);
+					$tweetdate = $item->get_date('F j');
+					$tweetday = $item->get_date('j');
+					$edd = date('j');
+						if ($tweetday==$edd) { $tweetdate = "today"; }
+						else if ($tweetday==($edd-1)) { $tweetdate = "yesterday"; }
+						else { $tweetdate = "On " . $tweetdate; }
+					$tweettime = $item->get_date('g\:i a');
+					$edgotone = 'yes';
+				}
+				else {
+					$tweet = "There's a Twitter error.";
+					$tweetdate = "Oops.";
+					$tweettime = "this moment<!--".$i."-->";
+					$edgotone = 'yes';
+					}
+				}
+			$twsearch = array(
+				'%((www\.|(http|https)+\:\/\/)[_.a-zA-Z0-9-]+\.[a-zA-Z0-9\/_:@=.+?,##\%&~-]*[^.|\'|\# |!|\(|?|,| |>|<|;|\)])%',
+				'|@([\w_]+)|',
+				'|#([\w_]+)|'
+				);
+			$twreplace = array(
+				'<a href="$1">$1</a>',
+				'<a href="http://twitter.com/$1">@$1</a>',
+				'<a href="http://twitter.com/search?q=%23$1">#$1</a>'
+				);
+			$tweet = preg_replace($twsearch, $twreplace, $tweet);
+				/*Print it out*/
+				print "<p class=\"tweet\">".fancytext($tweet)."</p>
+				<p class=\"tweet-info\">— ".$tweetdate." at ".$tweettime."</a></p>";
+				}
+			}
+
+			function fancytext($text) {
+				$simpfound = array(' \\\'', '\\\'', ' \"', '\" ', '\"');
+				//Fix them with
+					$simpfixed = array(' ‘', '’', ' “', '” ', '“');
+					$fancysafe = str_replace($simpfound, $simpfixed, $text);
+					return $fancysafe;
+				}
+		?>
+
+    </body>
+</html>
+
