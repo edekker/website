@@ -14,9 +14,7 @@
 			if($edtwitfeed->error()) {
 				/*If there's an error message, spit it out and stop*/
 				print "<p class=\"tweet\">".$edtwitfeed->error()."</p>
-				<p class=\"tweet-info\">
-				<strong>Oops.</strong>
-				There's a Twitter error.</p>";
+				<p class=\"tweet-info\">Please stand by. There's a Twitter error.</p>";
 				}
 
 			else { 
@@ -40,7 +38,7 @@
 				}
 				else {
 					$tweet = "There's a Twitter error.";
-					$tweetdate = "Oops.";
+					$tweetdate = "Please stand by.";
 					$tweettime = "this moment<!--".$i."-->";
 					$edgotone = 'yes';
 					}

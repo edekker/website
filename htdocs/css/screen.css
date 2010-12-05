@@ -61,20 +61,27 @@ div#footer a, div#footer p {
 
 div#supporting {
 	background-color: #8b8386;
-	color: #CDC1C5;
 	}
 
+div#supporting li {
+	color: #CDC1C5;
+	}
+	
 div#supporting a {
 	color: white;
 	}
 
-div#supporting h6 {
+div#supporting a.tweet-heading {
 	color: #CDC1C5;
 	}	
 	
 div#supporting p.tweet {
 	color: white;
 	}
+	
+div#supporting p.tweet-info {
+	color: #CDC1C5;
+	}	
 	
 /* ACCESSIBILITY */
 
@@ -191,13 +198,15 @@ div#supporting * li ul a {
 	}
 
 div#supporting p.tweet {
-	margin: 0 0 0 0;
+	margin: 0px 0px 5px 0px;
 	}
 
 div#supporting p.tweet-info {
 	text-align: right;
+	margin: 0px 15px 0px 0px;
 	}
 
+	
 /* FOOTER */
 
 div#footer {
