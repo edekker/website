@@ -176,7 +176,7 @@ div#supporting {
 	position: absolute;
 	top: 200px;
 	right: 0px;
-	padding: 10px 0px 15px 15px;
+	padding: 10px 15px 15px 15px;
 	}
 
 div#supporting li {
@@ -203,7 +203,7 @@ div#supporting p.tweet {
 
 div#supporting p.tweet-info {
 	text-align: right;
-	margin: 0px 15px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	}
 
 	
