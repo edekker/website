@@ -9,6 +9,7 @@
 			$edtwitfeed->enable_cache(false); //Wouldn't use this on an actual site; on live site, need place on server to store cached feeds
             $edtwitfeed->set_feed_url('http://twitter.com/statuses/user_timeline/120208073.rss');
 			$edtwitfeed->handle_content_type();
+      /*date_default_timezone_set('America/Chicago');*/
             $edtwitfeed->init();
 
 			if($edtwitfeed->error()) {
