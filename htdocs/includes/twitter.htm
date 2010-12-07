@@ -1,10 +1,5 @@
 <!--PHP starts here-->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="ericadekker-com">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <?php require('simplepie.inc'); ?>
 
         <?php
@@ -15,15 +10,15 @@
             $edtwitfeed->set_feed_url('http://twitter.com/statuses/user_timeline/120208073.rss');
 			$edtwitfeed->handle_content_type();
             $edtwitfeed->init();
-			
+
 			if($edtwitfeed->error()) {
 				/*If there's an error message, spit it out and stop*/
 				print "<p class=\"tweet\">".$edtwitfeed->error()."</p>
 				<p class=\"tweet-info\">Please stand by. There's a Twitter error.</p>";
 				}
 
-			else { 
-				/*Otherwise, attempt to get the tweet, etc.*/  
+			else {
+				/*Otherwise, attempt to get the tweet, etc.*/
 				/*Get some stuff, but not @replies */
 					//for($i=0; $i < 5; $i++) {
 					$i = 0;
@@ -75,6 +70,5 @@
 
 		?>
 
-</html>
-
 <!--PHP ends here-->
+
